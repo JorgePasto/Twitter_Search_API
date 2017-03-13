@@ -381,7 +381,10 @@
                 "token": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "token"
+            ]
         },
         "Header": {
             "type": "object",
@@ -400,7 +403,11 @@
                 "password": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "userName",
+                "password"
+            ]
         },
         "basicUser_Type": {
             "type": "object",
@@ -421,10 +428,22 @@
                 "userName": {
                     "type": "string"
                 },
+                "firstname": {
+                    "type": "string"
+                },
+                "surname": {
+                    "type": "string"
+                },
                 "password": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "mail",
+                "rol",
+                "userName",
+                "password"
+            ]
         },
         "user_Type": {
             "type": "object",
@@ -486,7 +505,10 @@
                 "content": {
                     "type": "string"
                 }
-            }
+            },
+            "required": [
+                "content"
+            ]
         },
         "search_Type": {
             "type": "array",
