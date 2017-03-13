@@ -13,7 +13,7 @@ info:
     name: GlobalLogic
     url: https://www.globallogic.com/latam
     
-host: "www.globallogic.com"
+host: "172.17.192.31:8081"
 schemes: [ "http" ]
 basePath: "/SOA/Projects/TwitterSearch"
 
@@ -273,6 +273,8 @@ definitions:
         format: dateTime
       token: 
         type: string
+    required:
+      - token
 
   Header: 
     type: object
@@ -289,7 +291,10 @@ definitions:
         type: string
       password: 
         type: string
-
+    required:
+      - userName
+      - password
+      
   basicUser_Type:
     type: object
     properties:
@@ -305,9 +310,18 @@ definitions:
           - admin
       userName:
         type: string
+      firstname:
+        type: string
+      surname:
+        type: string
       password: 
         type: string
-
+    required:
+      - mail
+      - rol
+      - userName
+      - password
+    
   user_Type:    
     type: object
     allOf:
@@ -351,7 +365,9 @@ definitions:
         format: dateTime
       content:
         type: string
-
+    required:
+      - content
+      
   search_Type:
     type: array
     items:
