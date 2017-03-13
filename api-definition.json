@@ -13,7 +13,7 @@
             "url": "https://www.globallogic.com/latam"
         }
     },
-    "host": "www.globallogic.com",
+    "host": "172.17.192.31:8081",
     "schemes": [
         "http"
     ],
